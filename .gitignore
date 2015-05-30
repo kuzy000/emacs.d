@@ -1,0 +1,15 @@
+/*
+/*/
+
+\#*#
+.*
+*~
+
+!.gitignore
+!init.el
+!qt-creator-theme.el
+
+!/plugin/
+!/my/
+
+
