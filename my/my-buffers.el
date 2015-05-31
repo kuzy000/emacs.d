@@ -65,6 +65,5 @@
 ;
 ;(define-key evil-normal-state-map (kbd "C-j") 'my-cycling-command)
 
-(define-key evil-normal-state-map (kbd "gb") 'projectile-switch-to-buffer)
 
 (provide 'my-buffers)

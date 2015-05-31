@@ -14,5 +14,4 @@
 (yas-global-mode t)
 
 
-
 (provide 'my-general)

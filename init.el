@@ -51,6 +51,10 @@
     tern
     company-tern
     rainbow-mode
+    edbi
+    edbi-sqlite
+    edbi-minor-mode
+    company-edbi
     cycbuf))
 
 (require 'my-packages)
@@ -67,6 +71,21 @@
 (require 'my-proofgeneral)
 (require 'my-rails)
 (require 'my-web)
+(require 'my-rdbms)
 
 (require 'my-utils)
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (edbi-minor-mode yasnippet yaml-mode web-mode wacspace vi-tilde-fringe swbuff smart-tabs-mode rvm robe rinari rainbow-mode rainbow-delimiters projectile-rails nlinum neotree malinka lua-mode linum-relative json-mode js2-mode ido-vertical-mode ido-ubiquitous helm-projectile helm-company flymake-ruby flycheck evil-matchit evil-commentary evil-args edbi-sqlite discover cycbuf company-tern company-irony company-edbi company-c-headers color-theme-sanityinc-tomorrow coffee-mode cmake-font-lock buffer-stack autopair auctex aggressive-indent ace-jump-mode))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
