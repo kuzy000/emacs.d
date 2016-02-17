@@ -1,17 +1,25 @@
-(require 'helm-config)
-(require 'ido)
-(require 'ido-vertical-mode)
-
 (setq gc-cons-threshold 20000000)
 
-(ido-mode t)
-(ido-vertical-mode t)
-(projectile-global-mode)
+; (use-package helm-config)
+(use-package helm)
+(use-package ido
+  :config
+  (ido-mode t)
+  (use-package ido-vertical-mode
+    :config
+    (ido-vertical-mode t)))
 
-(electric-pair-mode t)
+(use-package projectile
+  :config
+  (projectile-global-mode))
 
-(require 'yasnippet)
-(yas-global-mode t)
 
+(use-package electric
+  :config
+  (electric-pair-mode t))
+
+(use-package yasnippet
+  :config
+  (yas-global-mode t))
 
 (provide 'my-general)
