@@ -19,12 +19,12 @@
 (add-to-list 'auto-mode-alist '("\\.gemspec\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile\\'" . ruby-mode))
 
-(add-hook 'ruby-mode-hook 'flymake-ruby-load)
-(add-hook 'ruby-mode-hook 'projectile-rails-on)
-(add-hook 'ruby-mode-hook 'robe-mode)
+(add-hook 'enh-ruby-mode-hook 'flymake-ruby-load)
+(add-hook 'enh-ruby-mode-hook 'projectile-rails-on)
+(add-hook 'enh-ruby-mode-hook 'robe-mode)
 
 (require 'my-indention)
-(add-hook 'ruby-mode-hook 'my-set-local-no-tabs)
+(add-hook 'enh-ruby-mode-hook 'my-set-local-no-tabs)
 
 (eval-after-load 'company
   '(push 'company-robe company-backends))

@@ -8,6 +8,7 @@
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.ejs\\'" . web-mode))
 
 (require 'my-indention)
 (add-hook 'web-mode-hook 'my-set-local-no-tabs)
@@ -20,6 +21,7 @@
             (setq web-mode-indent-style 2)))
 
 
+(require 'haml-mode)
 (require 'json-mode)
 (require 'js2-mode)
 (require 'coffee-mode)
@@ -27,6 +29,8 @@
 
 (require 'tern)
 (require 'company-tern)
+
+(setq coffee-tab-width 2)
 
 (add-hook 'js-mode-hook (lambda () (tern-mode t)))
 

@@ -2,7 +2,7 @@
 (require 'package)
 
 (add-to-list 'package-archives
-             '("melpa" . "http://melpa.org/packages/") t)
+             '("melpa" . "https://melpa.org/packages/") t)
 
 (setq package-user-dir (expand-file-name "elpa" my-init-dir))
 (package-initialize)

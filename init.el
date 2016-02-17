@@ -16,6 +16,7 @@
 (defvar my-packages-list
   '(undo-tree
     rainbow-delimiters
+    darcula-theme
     evil
     evil-matchit
     evil-args
@@ -45,9 +46,11 @@
     rinari
     web-mode
     yaml-mode
+    haml-mode
     json-mode
     js2-mode
     coffee-mode
+    jade-mode
     tern
     company-tern
     rainbow-mode
@@ -55,6 +58,8 @@
     edbi-sqlite
     edbi-minor-mode
     company-edbi
+    glsl-mode
+    evil-org
     cycbuf))
 
 (require 'my-packages)
@@ -82,7 +87,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (edbi-minor-mode yasnippet yaml-mode web-mode wacspace vi-tilde-fringe swbuff smart-tabs-mode rvm robe rinari rainbow-mode rainbow-delimiters projectile-rails nlinum neotree malinka lua-mode linum-relative json-mode js2-mode ido-vertical-mode ido-ubiquitous helm-projectile helm-company flymake-ruby flycheck evil-matchit evil-commentary evil-args edbi-sqlite discover cycbuf company-tern company-irony company-edbi company-c-headers color-theme-sanityinc-tomorrow coffee-mode cmake-font-lock buffer-stack autopair auctex aggressive-indent ace-jump-mode))))
+	(evil-org yasnippet yaml-mode web-mode wacspace vi-tilde-fringe swbuff smart-tabs-mode rvm robe rinari rainbow-mode rainbow-delimiters projectile-rails php-mode php+-mode nlinum neotree names malinka lua-mode linum-relative json-mode js2-mode jade-mode ido-vertical-mode ido-ubiquitous helm-projectile helm-company haml-mode glsl-mode flymake-ruby flycheck evil-matchit evil-commentary evil-args enh-ruby-mode edbi-sqlite edbi-minor-mode discover darcula-theme cycbuf company-tern company-irony company-edbi company-c-headers color-theme-sanityinc-tomorrow coffee-mode cmake-font-lock buffer-stack autopair auctex aggressive-indent ace-jump-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -1,5 +1,5 @@
 (deftheme qt-creator
-  "Created 2015-05-14.")
+  "Created 2015-06-04.")
 
 (custom-theme-set-faces
  'qt-creator
@@ -32,7 +32,7 @@
  '(link ((t (:foreground "#0000FF" :underline t))))
  '(link-visited ((default (:inherit (link))) (((class color) (background light)) (:foreground "magenta4")) (((class color) (background dark)) (:foreground "violet"))))
  '(fringe ((t (:background "#eeeeee" :foreground "#b2b2b2"))))
- '(header-line ((t (:box nil :foreground "#8959a8" :inherit (mode-line)))))
+ '(header-line ((t (:inherit mode-line :box nil))))
  '(tooltip ((((class color)) (:inherit (variable-pitch) :foreground "black" :background "lightyellow")) (t (:inherit (variable-pitch)))))
  '(mode-line ((t (:background "#4B4B4B" :foreground "white" :box (:line-width 1 :color "#000000") :weight normal))))
  '(mode-line-buffer-id ((t (:foreground "#ffffff" :weight bold))))
@@ -63,7 +63,6 @@
  '(company-tooltip-search ((default (:inherit (company-tooltip-selection)))))
  '(company-preview ((((background light)) (:inherit (company-tooltip-selection))) (((background dark)) (:foreground "wheat" :background "blue4"))))
  '(company-preview-search ((((background light)) (:inherit (company-tooltip-common-selection))) (((background dark)) (:background "blue1" :inherit (company-preview)))))
- '(cycbuf-current-face ((t (:background "#418BD4" :foreground "white"))))
  '(rainbow-delimiters-depth-1-face ((t (:foreground "#ff0400" :weight bold))))
  '(rainbow-delimiters-depth-2-face ((t (:foreground "#ff883d" :weight bold))))
  '(rainbow-delimiters-depth-3-face ((t (:foreground "#88883d" :weight bold))))
@@ -75,10 +74,10 @@
  '(neo-root-dir-face ((t (:foreground "#800000"))))
  '(neo-banner-face ((t (:foreground "#b2b2b2"))))
  '(neo-header-face ((t (:foreground "#b2b2b2"))))
- '(default ((t (:stipple nil :background "white" :foreground "#000000" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 99 :width normal :foundry "bitstream"))))
  '(web-mode-symbol-face ((t (:inherit font-lock-constant-face))))
  '(web-mode-html-attr-name-face ((t (:inherit font-lock-constant-face))))
  '(web-mode-html-attr-equal-face ((t (:inherit default))))
- '(web-mode-html-tag-face ((t (:inherit font-lock-type-face)))))
+ '(web-mode-html-tag-face ((t (:inherit font-lock-type-face))))
+ '(default ((t (:stipple nil :background "white" :foreground "#000000" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 99 :width normal :foundry "bitstream")))))
 
 (provide-theme 'qt-creator)

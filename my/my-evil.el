@@ -2,6 +2,7 @@
 (require 'linum-relative)
 (require 'evil-args)
 (require 'evil-commentary)
+(require 'evil-org)
 
 (evil-mode 1)
 (evil-commentary-mode)
@@ -43,6 +44,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
 (global-set-key [escape] 'evil-exit-emacs-state)
 
+(linum-relative-on)
 
 (require 'discover)
 
