@@ -54,6 +54,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 
 (use-package linum-relative
   :config
+  (setq linum-relative-format "%3s ")
   (linum-relative-on))
 
 (provide 'my-evil)
