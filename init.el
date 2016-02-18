@@ -20,6 +20,7 @@
 (require 'my-whitespace)
 (require 'my-indention)
 (require 'my-completion)
+(require 'my-git)
 (require 'my-cmake)
 (require 'my-c++)
 (require 'my-lisp)

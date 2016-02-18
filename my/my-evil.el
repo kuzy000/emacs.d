@@ -43,9 +43,14 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
       (interactive)
       (evil-delete (point-at-bol) (point))))
 
-  (define-key evil-normal-state-map (kbd "gb") 'projectile-find-file)
-  (define-key evil-normal-state-map (kbd "gp") 'projectile-switch-project)
-  (define-key evil-normal-state-map (kbd "gj") 'ido-switch-buffer))
+  (use-package evil-leader
+    :config
+    (global-evil-leader-mode)
+    (evil-leader/set-leader "<SPC>")
+    (evil-leader/set-key
+     "h" 'projectile-find-file
+     "p" 'projectile-switch-project
+     "j" 'ido-switch-buffer)))
 
 (use-package linum-relative
   :config
