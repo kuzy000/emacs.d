@@ -19,6 +19,7 @@
   (add-hook 'lisp-interaction-mode-hook 'my-set-local-no-tabs)
   (add-hook 'scheme-mode-hook           'my-set-local-no-tabs)
   (add-hook 'lua-mode-hook              'my-set-local-no-tabs)
+  (add-hook 'web-mode-hook              'my-set-local-no-tabs)
 
   (defun my-c++-style-setup ()
     (c-set-offset 'innamespace [0]))

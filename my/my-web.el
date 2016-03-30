@@ -10,10 +10,6 @@
   :mode "\\.ejs\\'"
 
   :config
-  (use-package my-indention
-    :config
-    (add-hook 'web-mode-hook 'my-set-local-no-tabs))
-
   (add-hook 'web-mode-hook
             (lambda ()
               (setq web-mode-markup-indent-offset 2)
