@@ -28,3 +28,4 @@
 (require 'my-rails)
 (require 'my-web)
 (require 'my-rdbms)
+(require 'my-rust)

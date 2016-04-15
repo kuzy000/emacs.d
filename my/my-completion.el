@@ -14,6 +14,7 @@
 
   (add-hook 'after-init-hook 'global-company-mode)
 
+  (setq company-tooltip-align-annotations t)
   (setq company-require-match nil))
 
 (provide 'my-completion)
