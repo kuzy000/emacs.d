@@ -29,3 +29,18 @@
 (require 'my-web)
 (require 'my-rdbms)
 (require 'my-rust)
+(require 'my-latex)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (auctex yasnippet yaml-mode web-mode use-package smart-tabs-mode robe rinari rainbow-mode rainbow-delimiters racer projectile-rails malinka linum-relative json-mode js2-mode ido-vertical-mode helm haml-mode flymake-ruby evil-magit evil-leader evil-commentary enh-ruby-mode edbi-sqlite edbi-minor-mode discover darcula-theme company-tern company-edbi company-c-headers coffee-mode))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

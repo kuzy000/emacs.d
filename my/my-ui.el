@@ -8,8 +8,9 @@
 
 (global-linum-mode 1)
 
-(use-package darcula-theme)
-(load-theme 'darcula t)
+(use-package darcula-theme
+  :config
+  (load-theme 'darcula t))
 
 (add-to-list 'default-frame-alist '(font . "Meslo LG S-10"))
 
