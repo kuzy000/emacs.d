@@ -1,6 +1,5 @@
 (use-package rainbow-delimiters
   :config
-  (defconst rainbow-delimiters-max-face-count 6)
   (add-hook 'clojure-mode-hook          'rainbow-delimiters-mode)
   (add-hook 'emacs-lisp-mode-hook       'rainbow-delimiters-mode)
   (add-hook 'ielm-mode-hook             'rainbow-delimiters-mode)
