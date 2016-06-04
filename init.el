@@ -31,3 +31,4 @@
 (require 'my-rust)
 (require 'my-latex)
 (require 'my-glsl)
+(require 'my-haskell)
